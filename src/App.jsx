@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Home, History, Rocket, News } from "lucide-react";
+import { Home, History, Rocket } from "lucide-react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/navbar";
 import Index from "./pages/Index";
@@ -30,7 +30,7 @@ export const navItems = [
   {
     title: "Latest News",
     to: "/latest-news",
-    icon: <News className="h-4 w-4" />,
+    icon: <Rocket className="h-4 w-4" />,
   },
 ];
 
